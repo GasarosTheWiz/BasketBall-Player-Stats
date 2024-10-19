@@ -1,0 +1,210 @@
+body {
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 105vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 42px; /* Larger font size */
+    margin-top: -200px;
+    color: #ffffff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: #4fa3c4;
+    color: white;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #4fa3c4, #0056b3) 1;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0 0px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.7);
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.field-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.full-width {
+    width: 200px;
+}
+
+.half-width {
+    width: 60px;
+}
+
+.separator {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.submit-button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+th {
+    background-color: #444;
+}
+
+.export-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(184, 184, 184, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4fa3c4;
+    color: black;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.7);
+}
+
+.top-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.new-stats-button, .logout-button {
+    background-color: #4fa3c4;
+    color: white;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #4fa3c4, #0056b3) 1;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.new-stats-button:hover, .logout-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.7);
+}
+
+#playerStatsChart {
+    margin-top: 20px;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.chart-canvas {
+    width: 80vw;
+    height: 50vh;
+    max-height: 400px;
+}
