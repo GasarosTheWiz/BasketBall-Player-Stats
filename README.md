@@ -12,7 +12,7 @@ Database: MySQL
 Installation Instructions:
 
 Clone the repository:
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/GasarosTheWiz/BasketBall-Player-Stats.git
 
 Navigate to the project folder:
 cd repository-name
