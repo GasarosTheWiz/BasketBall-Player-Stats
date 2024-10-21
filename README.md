@@ -31,6 +31,7 @@ npm start
 
 Login Credentials
 (coach can delete players,player can't delete players):
+
 Coach login:
 Username: coach
 Password: coach
